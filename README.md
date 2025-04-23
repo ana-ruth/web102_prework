@@ -26,6 +26,9 @@ Here's a walkthrough of implemented features:
 
 <img src='assets\SeaMonster.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+- Button Features:
+<img src='assets\SeaMonsterButtonFeature.gif' title='Buttons Video Walkthrough' width='' alt='Buttons Video Walkthrough' />
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif (https://www.screentogif.com/) for Windows
 
