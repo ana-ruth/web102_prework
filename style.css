@@ -9,18 +9,117 @@ body {
     width: 50px;
 }
 
+html {
+    scroll-padding-top:  20%; 
+  }
+
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     background-color: lightblue;
-    padding: 1%;
-    align-items: center;
+    padding: 0%;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
 }
 
+nav {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 3% 0 3%;
+}
+nav > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    padding: 2% 0 2% 2%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(91, 125, 163);
+    height: 100%;
+    padding: 0 20px 0 20px;
+}
+
+li > a:active {
+    color: white;
+    background-color: rgb(91, 125, 163);
+  }
+  
+.background_Info{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    grid-gap: 0;
+    padding: 6% 5% 6% 5%;
+}
+
+.background_Info p{
+    color: rgb(28, 46, 63);
+    font-size: 20px;
+
+    animation-duration: 1s;
+  animation-name: slide-in;
+}
+
+@keyframes slide-in {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+  
+ .title{
+    color:aliceblue;
+    font-size: 75px;
+ } 
+
+h2{
+    text-align: center;
+    font-size: 45px;
+
+    animation-duration: 1s;
+    animation-name: slide-in;
+}
+.check-games{
+    text-align: center;
+}
+
 .stats-container {
     display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.stats-container:hover{
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
